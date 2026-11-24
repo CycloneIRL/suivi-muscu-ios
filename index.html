@@ -914,7 +914,7 @@ function seed(){
   const EQS={'Développé couché':['plates'],'Pec fly':['stack'],'Développé incliné haltères':['db'],'Développé militaire':['plates'],'Élévations latérales':['db'],'Triceps poulie':['stack'],'Tirage vertical':['stack'],'Rowing barre':['plates'],'Curl biceps':['db'],'Squat':['plates'],'Presse à cuisses':['plates',0],'Soulevé de terre roumain':['plates'],'Leg extension':['stack'],'Leg curl':['stack'],'Mollets debout':['stack']};
   const ex=(name,tags,labels,rest)=>({id:uid(),name,tags,photo:null,note:'',labels:labels||[],rest:rest||null,equip:(EQS[name]||[null])[0],base:(EQS[name]||[])[1]==null?null:EQS[name][1],nsets:3,created:now()});
   return {v:1,
-    types:[{name:'UPPER',color:COLORS[0]},{name:'LOWER',color:COLORS[1]},{name:'PUSH',color:COLORS[2]},{name:'PULL',color:COLORS[3]},{name:'LEGS',color:COLORS[5]}],
+    types:[{name:'UPPER',color:COLORS[0]},{name:'LOWER',color:COLORS[1]},{name:'PUSH',color:COLORS[2]},{name:'PULL',color:COLORS[3]},{name:'LEGS',color:COLORS[5]},{name:'FULL BODY',color:COLORS[4]}],
     exercises:[
       ex('Développé couché',['UPPER','PUSH'],[LBL_CON],150),ex('Pec fly',['UPPER','PUSH'],[LBL_ETI],90),ex('Développé incliné haltères',['UPPER','PUSH']),
       ex('Développé militaire',['UPPER','PUSH']),ex('Élévations latérales',['UPPER','PUSH']),
